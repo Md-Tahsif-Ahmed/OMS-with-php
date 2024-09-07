@@ -1,0 +1,123 @@
+<?php 
+	include("header.php");
+	include("sidebar.php");
+?>
+
+ <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <!-- <h1>
+            General Form Elements
+            <small>Preview</small>
+          </h1> -->
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#">Asset Management</a></li>
+            <li class="active">Asset List/Add New Asset</li>
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+          <div class="row">
+            <!-- left column -->
+            <div class="col-md-6">
+              <!-- general form elements -->
+              <div class="box box-primary">
+                <div class="box-header with-border">
+                  <h3 class="box-title">Add New Asset</h3>
+                </div><!-- /.box-header -->
+                <!-- form start -->
+                <form role="form" action="outlet_list.php" method="post">
+                  <div class="box-body">
+                    <div class="form-group">
+                      <label for="outlet_name">Tag Number</label>
+                      <input type="text" class="form-control" id="outlet_name" name="outlet_name" placeholder="Enter the Tag Number">
+                    </div>
+                    <div class="form-group">
+                      <label for="outlet_location">Asset Description</label>
+                      <input type="text" class="form-control" id="outlet_location" name="outlet_location" placeholder="Description">
+                    </div>
+					<div class="form-group">
+                      <label for="type_owner">Asset Catagory</label>
+                      <select class="form-control select2" style="width: 100%;" name="type_owner">
+	                      <option selected="selected">Please select the asset catagory</option>
+	                      <option>Computer</option>
+	                      <option>Air Condition</option>
+						  <option>Glass</option>
+	                      <option>Furniture</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="size">Model (if needed)</label>
+                      <input type="text" class="form-control" id="size" name="size" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="monthly_rent">Serial#</label>
+                      <input type="text" class="form-control" id="monthly_rent" name="monthly_rent" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="increase_percentage">Barcode</label>
+                      <input type="text" class="form-control" id="increase_percentage" name="increase_percentage" placeholder="">
+                    </div>
+					<div class="form-group">
+                      <label for="increase_percentage">Brand Name</label>
+                      <input type="text" class="form-control" id="increase_percentage" name="increase_percentage" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="increase_percentage">Branch Name</label>
+                      <input type="text" class="form-control" id="increase_percentage" name="increase_percentage" placeholder="">
+                    </div>
+					<div class="form-group">
+                      <label for="increase_percentage">Color</label>
+                      <input type="text" class="form-control" id="increase_percentage" name="increase_percentage" placeholder="">
+                    </div>
+					<div class="form-group">
+                      <label for="increase_percentage">Condition</label>
+                      <input type="text" class="form-control" id="increase_percentage" name="increase_percentage" placeholder="">
+                    </div>
+					<div class="form-group">
+                      <label for="increase_percentage">Vendor</label>
+                      <input type="text" class="form-control" id="increase_percentage" name="increase_percentage" placeholder="">
+                    </div>
+					<div class="form-group">
+                      <label for="agree_end_date">Purchased Date</label>
+                      <input type="date" class="form-control" id="agree_end_date" name="agree_end_date" placeholder="Start Date">
+                    </div>
+					<div class="form-group">
+                      <label for="increase_percentage">Purchased Cost</label>
+                      <input type="text" class="form-control" id="increase_percentage" name="increase_percentage" placeholder="">
+                    </div>
+					<div class="form-group">
+                      <label for="type_owner">Payment Mode for Purchased</label>
+                      <select class="form-control select2" style="width: 100%;" name="type_owner">
+	                      <option selected="selected">Cash</option>
+	                      <option>Cheque</option>
+                      </select>
+                    </div>
+					<div class="form-group">
+                      <label for="increase_percentage">Warranty Expiration Date to Caluculate Life Time</label>
+                      <input type="date" class="form-control" id="agree_start_date" name="agree_start_date" placeholder="Start Date">
+                    </div>
+                  </div><!-- /.box-body -->
+
+                  <div class="box-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </div><!-- /.box -->
+            </div><!--/.col (left) -->
+            <!-- right column -->
+          </div>   <!-- /.row -->
+        </section><!-- /.content -->
+      </div><!-- /.content-wrapper -->
+
+<?php include("footer.php");?>
+
+<script type="text/javascript">
+	$(function () {
+        //Initialize Select2 Elements
+        $(".select2").select2();
+      });
+</script>

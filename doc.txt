@@ -1,0 +1,3 @@
+1. Admin user -> role -> 1
+2. Branch user -> role ->2
+3. Admin 2nd user -> role -> 3
